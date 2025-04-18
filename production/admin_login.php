@@ -1,4 +1,8 @@
 <?php
+// Set session parameters before starting the session
+ini_set('session.gc_maxlifetime', 7200);  // Set session lifetime to 2 hours (7200 seconds)
+
+
 session_start();
 
 include 'includes/head.php';
